@@ -1,0 +1,46 @@
+@import "./bootstrap-custom.css";
+
+.content-section {
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: var(--text-color) !important;
+}
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+input.search-query {
+  border-color: var(--border);
+}
+
+.form-control:focus {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.pagination > li > a {
+  border-color: var(--border);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #eee;
+  border-color: var(--border);
+  background-color: var(--background) !important;
+  box-shadow: none;
+}
+
+.page-item.active :hover,
+.page-item.active :focus {
+  background-color: var(--primary) !important;
+}
+
+.page-item.disabled .page-link {
+  border-color: var(--border);
+}

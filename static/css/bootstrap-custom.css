@@ -1,0 +1,93 @@
+:root {
+  --border: #444c56;
+  --background: #22272e;
+  --pre-max-width: 45rem;
+  --text-color: #cdd9e5;
+}
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px; /* or 950px */
+}
+.bg-dark {
+  background-color: var(--background) !important;
+  /* color: var(--text-color) !important; */
+}
+.text-light {
+  color: var(--text-color) !important;
+}
+.card {
+  background-color: var(--background) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(205, 217, 229, 0.5);
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: var(--text-color) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(205, 217, 229, 0.7);
+}
+
+/* hide scrollbar but allow scrolling */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* code */
+pre.prettyprint {
+  border-radius: 6px;
+  max-width: var(--pre-max-width);
+  padding: 16px;
+  font-size: 85%;
+}
+
+.pre-wrapper {
+  position: relative;
+  max-width: var(--pre-max-width);
+}
+
+.pre-wrapper .copy-snippet {
+  border-radius: 6px;
+  min-width: 55px;
+  background: #373e47 !important;
+  border: 1px solid var(--border);
+  color: #abdac7;
+  font-family: "HELEVETICA", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  margin: 5px;
+  padding: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  position: absolute;
+  background: var(--dark);
+  top: 0;
+  right: 0;
+}
+
+.pre-wrapper .copy-snippet:hover {
+  background: #444c56 !important;
+  border: 1px solid #768390;
+}
+
+.copy-snippet:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

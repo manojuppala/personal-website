@@ -1,0 +1,19 @@
+@import "./bootstrap-custom.css";
+
+.card {
+  flex-direction: row;
+  align-items: center;
+  max-width: 35rem;
+  border: none;
+}
+.card img {
+  border-radius: calc(0.25rem - 1px);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-container {
+  flex-basis: 172px;
+  padding: 10px 0 10px 25px;
+}

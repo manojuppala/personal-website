@@ -1,0 +1,30 @@
+@import "./bootstrap-custom.css";
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.25);
+}
+
+.cards-fixed-width {
+  min-width: 14rem;
+  max-width: 18rem;
+}
+
+.card-deck {
+  align-items: center;
+}
+
+.card-border {
+  border-color: var(--border);
+}
+
+.card {
+  border-radius: 6px;
+}
